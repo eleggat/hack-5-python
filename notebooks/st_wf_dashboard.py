@@ -41,7 +41,7 @@ for i in range(1, gens):
     # progress
     if i == (gens-1):
     	status_text.text(f"100% complete")
-    	progress_bar.progress(i)
+    	progress_bar.progress(1)
     else:
     	status_text.text(f"{round(i/gens*100)}% complete")
     	progress_bar.progress(i/gens)
