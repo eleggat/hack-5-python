@@ -44,7 +44,7 @@ for i in range(1, gens):
     	progress_bar.progress(i)
     else:
     	status_text.text(f"{round(i/gens*100)}% complete")
-    	progress_bar.progress(i)
+    	progress_bar.progress(i/gens)
     # stopping for 0 or 1
     if freq == 1:
     	st.write(f"The allele was fixed in generation {i}") #print if allele is fixed, then stop
