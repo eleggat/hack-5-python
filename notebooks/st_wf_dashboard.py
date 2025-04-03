@@ -42,6 +42,7 @@ for i in range(1, gens):
     if i == (gens-1):
     	status_text.text(f"100% complete")
     	progress_bar.progress(1)
+    	st.write(f"The allele frequency is {freq} after {gens} generations")
     else:
     	status_text.text(f"{round(i/gens*100)}% complete")
     	progress_bar.progress(i/gens)
